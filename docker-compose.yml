@@ -1,0 +1,9 @@
+services:
+    portifolio:
+        build: .
+        container_name: meu_portifolio
+        ports:
+            - "5001:5000"
+        env_file:
+            - .env
+        restart: unless-stopped
