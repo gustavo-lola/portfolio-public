@@ -1,73 +1,113 @@
-# React + TypeScript + Vite
+<!-- Banner -->
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img width="100%" src="https://github.com/user-attachments/assets/2a1f8245-32d7-4910-af34-7a99284807d0" />
 
-Currently, two official plugins are available:
+<h1 align="center">✨ Portfolio</h1>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p align="center">
+Meu portfólio pessoal desenvolvido com <b>React</b>, <b>Vite</b> e <b>TailwindCSS</b>.
+</p>
 
-## React Compiler
+<p align="center">
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<img src="https://img.shields.io/badge/React-Frontend-61DAFB?logo=react" />
+<img src="https://img.shields.io/badge/Vite-Build%20Tool-646CFF?logo=vite" />
+<img src="https://img.shields.io/badge/TailwindCSS-Styling-38BDF8?logo=tailwindcss" />
+<img src="https://img.shields.io/badge/pnpm-Package%20Manager-F69220?logo=pnpm" />
+<img src="https://img.shields.io/badge/License-MIT-green.svg" />
 
-## Expanding the ESLint configuration
+</p>
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-    globalIgnores(["dist"]),
-    {
-        files: ["**/*.{ts,tsx}"],
-        extends: [
-            // Other configs...
+#  Sobre o projeto
 
-            // Remove tseslint.configs.recommended and replace with this
-            tseslint.configs.recommendedTypeChecked,
-            // Alternatively, use this for stricter rules
-            tseslint.configs.strictTypeChecked,
-            // Optionally, add this for stylistic rules
-            tseslint.configs.stylisticTypeChecked,
+Este repositório contém o código do meu **portfólio pessoal**, disponibilizado publicamente para que outras pessoas possam utilizá-lo como **template** ou **fonte de inspiração** para criar seus próprios portfólios.
 
-            // Other configs...
-        ],
-        languageOptions: {
-            parserOptions: {
-                project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-                tsconfigRootDir: import.meta.dirname,
-            },
-            // other options...
-        },
-    },
-]);
+Sinta-se livre para **explorar, adaptar e modificar** o projeto conforme suas necessidades.
+
+Caso utilize este projeto como base, lembre-se de assumir a responsabilidade pelas suas próprias **customizações e melhorias**.
+
+---
+
+#  Tecnologias Utilizadas
+
+Este projeto foi desenvolvido utilizando as seguintes tecnologias:
+
+* **React** — biblioteca principal para construção da interface
+* **Vite** — ferramenta moderna para build e desenvolvimento rápido
+* **pnpm** — gerenciador de pacotes utilizado no projeto
+* **TailwindCSS** — estilização rápida e de fácil manutenção
+* **Motion** — utilizado para criar animações suaves na interface
+* **Lucide Animated** — biblioteca de ícones animados *(da qual também sou contribuidor)*
+
+---
+
+#  Instalação
+
+Como o projeto utiliza **pnpm**, siga os passos abaixo para executá-lo localmente.
+
+###  Clonar o repositório
+
+```bash
+git clone https://github.com/gustavo-lola/portifolio.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+###  Entrar na pasta do projeto
 
-```js
-// eslint.config.js
-import reactDom from "eslint-plugin-react-dom";
-import reactX from "eslint-plugin-react-x";
-
-export default defineConfig([
-    globalIgnores(["dist"]),
-    {
-        files: ["**/*.{ts,tsx}"],
-        extends: [
-            // Other configs...
-            // Enable lint rules for React
-            reactX.configs["recommended-typescript"],
-            // Enable lint rules for React DOM
-            reactDom.configs.recommended,
-        ],
-        languageOptions: {
-            parserOptions: {
-                project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-                tsconfigRootDir: import.meta.dirname,
-            },
-            // other options...
-        },
-    },
-]);
+```bash
+cd portifolio
 ```
+
+###  Instalar as dependências
+
+```bash
+pnpm install
+```
+
+###  Rodar o projeto em ambiente de desenvolvimento
+
+```bash
+pnpm dev
+```
+
+Após isso, o projeto estará disponível normalmente em:
+
+```
+http://localhost:5173
+```
+
+---
+
+#  Demonstração
+
+Confira abaixo um vídeo mostrando a navegação completa pela página:
+
+https://github.com/user-attachments/assets/41fe4ce8-2ec3-4648-a0c6-c230a43c4738
+
+---
+
+#  Utilização como Template
+
+Se você pretende usar este projeto como base para criar seu próprio portfólio:
+
+* Faça um **Fork** do repositório
+* Personalize com suas **informações**
+* Adicione seus **projetos**
+* Ajuste o **design conforme seu gosto**
+
+---
+
+#  Licença
+
+Este projeto está licenciado sob a **MIT License**.
+
+Você pode utilizar, modificar e distribuir este projeto livremente, inclusive para fins comerciais, desde que o aviso de copyright original seja mantido.
+
+Veja o arquivo **LICENSE** para mais detalhes.
+
+---
+
+<p align="center">
+⭐ Se este projeto te ajudou, considere deixar uma <b>Star</b> no repositório.
+</p>
